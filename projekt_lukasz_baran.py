@@ -190,6 +190,7 @@ class Setup:
         self.end = self.check_setup("ending")
 
     def check_setup(self, position):
+        # check the correctness of the input
         x, y = 0, 0
         while 1:
             try:
@@ -214,6 +215,7 @@ class Setup:
                 print("Choose again - Column out of range of this maze: ")
                 continue
 
+            # check if the chosen position has at least one possible path ⬜
             possible = False
             if not x == self.size - 1:
                 if self.maze[x+1][y] == "⬜":
