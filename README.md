@@ -11,8 +11,9 @@
 ### Uruchomienie programu:
 
 - python3 projekt_lukasz_baran.py
+  - standardowe uruchomienie
 - python3 projekt_lukasz_baran.py | tee out.txt
-  - aby zapisac wynik do pliku (łatwie odczytać backtracking oraz kroki)
+  - aby zapisac wynik do pliku (łatwiej odczytać backtracking oraz wykonane kroki)
 
 Całość kodu została opatrzona komentarzem w języku angielskim.
 Program prowadzi krok po kroku co można w nim wykonać i w jaki sposób.
