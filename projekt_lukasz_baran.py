@@ -238,6 +238,7 @@ class Setup:
 
     def get_positions(self):
         while 1:
+            # check if chosen start is not the same as the chosen end
             if self.start == self.end:
                 print(
                     "Ending positon is the same as the starting, Please choose different ending position")
