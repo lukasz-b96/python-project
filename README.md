@@ -26,13 +26,13 @@ Sprawdza, jeżeli wprowadzone dane są nieprawidłowe.
     Inicjalizowany jest z parametrami x oraz y, aby zachować swoje położenie
 
         atrybuty:
-        - self.x, self.y: pozycja x,y na której się znajduje
-        - self.visited: zachowuje informacje czy została wcześniej odwiedzona
-        - self.walls: slownik który trzyma informacje o sąsiadach komorki(czy istnieją)
-        - self.directions: pomocnicza tablica zmiennych tuple, aby łatwiej było iterować w pętli
-        -
+        -self.x, self.y: pozycja x,y na której się znajduje
+        -self.visited: zachowuje informacje czy została wcześniej odwiedzona
+        -self.walls: slownik który trzyma informacje o sąsiadach komorki(czy istnieją)
+        -self.directions: pomocnicza tablica zmiennych tuple, aby łatwiej było iterować w pętli
+
         funkcje:
-        - get_possible_adjacent_cells: zwraca tablice komórek które zostały jeszcze nieodwiedzone
+        -get_possible_adjacent_cells: zwraca tablice komórek które zostały jeszcze nieodwiedzone
 
     Klasa CreateMazeDFS:
     Na początku pyta użytkownika o "N" rozmiar labiryntu.
@@ -41,14 +41,14 @@ Sprawdza, jeżeli wprowadzone dane są nieprawidłowe.
     Następnie inicjalizowana jest funkcja tworzenia labiryntu, która wykorzystuje iteracyjny DFS z stosem.
 
         atrybuty:
-        - self.size: ustawia rozmiar labiryntu
-        - self.grid: przechowuje grid komórek o rozmiarze N x N
-        funkcje:
+        -self.size: ustawia rozmiar labiryntu
+        -self.grid: przechowuje grid komórek o rozmiarze N x N
 
-        - set_size: pyta użytkownika o rozmiar labiryntu
-        - remove_wall_between_cells: funkcja do usuwania ścian pomiędzy dwoma komórkami
-        - start_algorithm: główna funkcja do tworzenia algorytmu, za pomocą DFS który wybiera losową drogę z backtrackingiem
-        - draw: funkcja drukująca gotowy labirynt za pomocą znaków ⬜ oraz ⬛ w rozmiarze N * 2 + 1
+        funkcje:
+        -set_size: pyta użytkownika o rozmiar labiryntu
+        -remove_wall_between_cells: funkcja do usuwania ścian pomiędzy dwoma komórkami
+        -start_algorithm: główna funkcja do tworzenia algorytmu, za pomocą DFS który wybiera losową drogę z backtrackingiem
+        -draw: funkcja drukująca gotowy labirynt za pomocą znaków ⬜ oraz ⬛ w rozmiarze N * 2 + 1
 
     Klasa Setup:
     Pozwala wybrać start i koniec w labiryncie.
