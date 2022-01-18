@@ -5,7 +5,7 @@
 ### Rozwiązanie:
 
 - Zastosowanie iteracyjnego algorytmu DFS za pomocą przechodzenia po komórkach (zapisywanie ich na lokalnym stosie).
-- Następnie wybieraniu losowej dostępnej sąsiedniej komórki i usuwaniem ich sąsiednich ścian oraz backtrackingiem do tworzenia labiryntów.
+- Następnie wybieraniu losowej dostępnej sąsiedniej komórki i usuwanie ich sąsiednich ścian oraz backtracking, aby do tworzenia labiryntów.
 - Zastosowanie rekurencyjnego algorytmu DFS do przechodzenia labiryntu.
 
 ### Uruchomienie programu:
