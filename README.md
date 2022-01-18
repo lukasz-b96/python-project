@@ -17,7 +17,7 @@
 
 Całość kodu została opatrzona komentarzem w języku angielskim.
 Program prowadzi krok po kroku co można w nim wykonać i w jaki sposób.
-Sprawdza jeżeli wprowadzone dane są nieprawidłowe.
+Sprawdza, jeżeli wprowadzone dane są nieprawidłowe.
 
 ### Zastosowane klasy:
 
