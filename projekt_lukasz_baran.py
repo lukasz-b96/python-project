@@ -22,7 +22,7 @@ class Cell:
         # adjacent walls of this cell
         self.walls = {"left": True, "right": True, "up": True, "down": True}
 
-        # just for easier for loop
+        # just for easier loops each direction
         self.directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 
     # checks if the cell has any unvisited and possible neighbors cells
@@ -185,6 +185,8 @@ class Setup:
     def __init__(self, maze: list, size: int):
         self.maze = maze
         self.size = size
+
+        # just for easier loops each direction
         self.directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
         self.start = self.check_setup("starting")
         self.end = self.check_setup("ending")
@@ -257,7 +259,7 @@ class SolveMazeDFS:
         # get the grid
         self.maze = maze
 
-        # directions in tuple, first value of tuple is a second index
+        # just for easier loops each direction
         self.directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 
         # copy starting and ending points
