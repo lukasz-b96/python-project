@@ -1,6 +1,8 @@
 # Problem: "Algorytmu generowania labiryntów w ASCII + przechodzenie z backtrackingiem"
 
-## Rozwiązanie:
+## Autor: Łukasz Baran
+
+### Rozwiązanie:
 
 - Zastosowanie iteracyjnego algorytmu DFS za pomocą przechodzenia po komórkach (zapisywanie ich na lokalnym stosie).
 - Następnie wybieraniu losowej dostępnej sąsiedniej komórki i usuwaniem ich sąsiednich ścian oraz backtrackingiem do tworzenia labiryntów.
