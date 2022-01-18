@@ -12,6 +12,7 @@
 
 - python3 projekt_lukasz_baran.py
 - python3 projekt_lukasz_baran.py | tee out.txt
+  - aby zapisac wynik do pliku (łatwie odczytać backtracking oraz kroki)
 
 Całość kodu została opatrzona komentarzem w języku angielskim.
 Program prowadzi krok po kroku co można w nim wykonać i w jaki sposób.
