@@ -77,14 +77,6 @@ Sprawdza, jeżeli wprowadzone dane są nieprawidłowe.
     Przyjmuje flagi które są wykorzystywane, aby kontrolować co ma zostać wyświetlone.
     Wykorzystuje algorytm DFS za pomocą rekurencji.
 
-        legenda:
-        -⬜ możliwa nieodwiedzona droga
-        -⬛ ściana
-        -🟩 końcowa trasa
-        -🟥 backtracking
-        -🟦 miejsce startu labiryntu
-        -🟪 miesjce końca labiryntu
-
         atrybuty:
         -self.maze: pobiera labirynt
         -self.size: zachowuje rozmiar labiryntu (N * 2 + 1)
@@ -96,3 +88,11 @@ Sprawdza, jeżeli wprowadzone dane są nieprawidłowe.
         -printSolution: pomocnicza funkcja która wyświetla aktualny stan przejścia
         -solve_maze_recursion: funkcje rekurencyjna, która służy do generowania rozwiązania (DFS z backtrackingiem)
         -solve_maze: funkcja inicjalizująca rekurencje, ustawia pola początkowe i końcowe w rozwiązaniu
+
+        legenda co jest wyświetlane:
+        -⬜ możliwa nieodwiedzona droga
+        -⬛ ściana
+        -🟩 końcowa trasa
+        -🟥 backtracking
+        -🟦 miejsce startu labiryntu
+        -🟪 miesjce końca labiryntu
