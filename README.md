@@ -1,19 +1,26 @@
-#Problem: "Algorytmu generowania labiryntów w ASCII + przechodzenie z backtrackingiem"
+# Problem: "Algorytmu generowania labiryntów w ASCII + przechodzenie z backtrackingiem"
 
-##Rozwiązanie:
--Zastosowanie iteracyjnego algorytmu DFS za pomocą przechodzenia po komórkach (zapisywanie ich na lokalnym stosie).
-Następnie wybieraniu losowej dostępnej sąsiedniej komórki i usuwaniem ich sąsiednich ścian oraz backtrackingiem do tworzenia labiryntów.
--Zastosowanie rekurencyjnego algorytmu DFS do przechodzenia labiryntu.
+## Rozwiązanie:
 
-###Uruchomienie programu:
-####-python3 projekt_lukasz_baran.py
-####-python3 projekt_lukasz_baran.py | tee out.txt
+### -Zastosowanie iteracyjnego algorytmu DFS za pomocą przechodzenia po komórkach (zapisywanie ich na lokalnym stosie).
 
-###całość kodu została opatrzona komentarzem w języku angielskim.
-###Program prowadzi krok po kroku co można w nim wykonać i w jaki sposób.
-###Sprawdza jeżeli wprowadzone dane są nieprawidłowe.
+### Następnie wybieraniu losowej dostępnej sąsiedniej komórki i usuwaniem ich sąsiednich ścian oraz backtrackingiem do tworzenia labiryntów.
 
-###Zastosowane klasy:
+### -Zastosowanie rekurencyjnego algorytmu DFS do przechodzenia labiryntu.
+
+### Uruchomienie programu:
+
+#### -python3 projekt_lukasz_baran.py
+
+#### -python3 projekt_lukasz_baran.py | tee out.txt
+
+### Całość kodu została opatrzona komentarzem w języku angielskim.
+
+### Program prowadzi krok po kroku co można w nim wykonać i w jaki sposób.
+
+### Sprawdza jeżeli wprowadzone dane są nieprawidłowe.
+
+### Zastosowane klasy:
 
     Klasa Cell:
     Tworzy obiekty który symuluje pojedynczą komórke w gridzie
