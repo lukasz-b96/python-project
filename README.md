@@ -6,8 +6,8 @@ Następnie wybieraniu losowej dostępnej sąsiedniej komórki i usuwaniem ich s�
 -Zastosowanie rekurencyjnego algorytmu DFS do przechodzenia labiryntu.
 
 Uruchomienie programu:
-python3 projekt_lukasz_baran.py
-python3 projekt_lukasz_baran.py | tee out.txt
+-python3 projekt_lukasz_baran.py
+-python3 projekt_lukasz_baran.py | tee out.txt
 
 Całość kodu została opatrzona komentarzem w języku angielskim.
 Program prowadzi krok po kroku co można w nim wykonać i w jaki sposób.
@@ -15,9 +15,9 @@ Sprawdza jeżeli wprowadzone dane są nieprawidłowe.
 
 Zastosowane klasy:
 
-Klasa Cell:
-Tworzy obiekty który symuluje pojedynczą komórke w gridzie
-Inicjalizowany jest z parametrami x oraz y, aby zachować swoje położenie
+    Klasa Cell:
+    Tworzy obiekty który symuluje pojedynczą komórke w gridzie
+    Inicjalizowany jest z parametrami x oraz y, aby zachować swoje położenie
 
         atrybuty:
         - self.x, self.y: pozycja x,y na której się znajduje
