@@ -76,7 +76,7 @@ Pozwala wybrać start i koniec w labiryncie.\
  punkty startu i końca nie nakładają się na siebie)\
  Inicjalizowana jest z parametrami maze oraz size, aby wykorzystać te dane.
 
-atrybuty:
+Atrybuty:
 
 - self.maze: pobiera labirynt aby na nim sprawdzać wybrane punkty
 - self.size: zachowuje rozmiar labiryntu (N \* 2 + 1)
@@ -85,13 +85,13 @@ atrybuty:
 - self.start, self.end: zachowują punkty startu i końca\
   w typie tuple podane przez użytkownika
 
-funkcje:
+Funkcje:
 
 - check_setup: sprawdza wprowadzane dane
 - get_positions: sprawdza czy na pewno wybrane punkty\
   nie nakładają sie i zwraca dane w formie tuple
 
-legenda co jest wyświetlane:
+Legenda:
 
 - " " możliwa droga
 - "# " ściana
@@ -103,7 +103,7 @@ Ma za zadaniem przejść podany labirynt, z podanym wejściem i wyjściem.\
  aby kontrolować co ma zostać wyświetlone.\
  Wykorzystuje algorytm DFS za pomocą rekurencji.
 
-atrybuty:
+Atrybuty:
 
 - self.maze: pobiera labirynt
 - self.size: zachowuje rozmiar labiryntu (N \* 2 + 1)\
@@ -112,7 +112,7 @@ atrybuty:
 - self.start, self.end: zachowują punkty startu i końca w typie tuple\
 - self.backtrack, self.follow: flagi co ma zostać wyświetlone\
 
-funkcje:
+Funkcje:
 
 - printSolution: funkcja która wyświetla aktualny stan przejścia
 - solve_maze_recursion: funkcje rekurencyjna,\
@@ -120,7 +120,7 @@ funkcje:
 - solve_maze: funkcja inicjalizująca rekurencje,\
   ustawia pola początkowe i końcowe w rozwiązaniu
 
-legenda co jest wyświetlane:
+Legenda co jest wyświetlane:
 
 - " " możliwa nieodwiedzona droga
 - "# " ściana
