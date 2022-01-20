@@ -37,8 +37,10 @@ class Cell:
         # for each directions
         for x, y in self.directions:
 
-            # checks if that direction is on the grid (index out of range or negative value)
-            if self.x + x in [len(given_grid), -1] or self.y + y in [-1, len(given_grid)]:
+            # checks if that direction is on the grid
+            # (index out of range or negative value)
+            if self.x + x in [len(given_grid), -1] or self.y + y \
+                    in [-1, len(given_grid)]:
                 continue
 
             # neighbor represents one cell
@@ -48,7 +50,7 @@ class Cell:
             if neighbor.visited:
                 continue
 
-            # if the cell was not visited add it to an array of possible_neighbors
+            # if the cell was not visited add it to an array
             possible_neighbors.append(neighbor)
 
         # return possible_neighbors
@@ -93,7 +95,7 @@ class CreateMazeDFS:
     # removes wall between current cell and neighbor cell
     def remove_wall_between_cells(self,  current: Cell, selected: Cell):
 
-        if (selected.x > current.x):  # selected is on the right, and current is on the left
+        if (selected.x > current.x):  # selected -> right, current -> left
             selected.walls["left"] = False  # selected left wall is deleted
             current.walls["right"] = False  # current right wall is deleted
         elif selected.x < current.x:  # REVERSE scenario X
@@ -161,7 +163,8 @@ class CreateMazeDFS:
             if row % 2 == 0:
                 # even rows are: black white black white ....
                 final.append(
-                    ["  " if cell % 2 != 0 else "# " for cell in range(final_size)])
+                    ["  " if cell % 2 != 0 else "# "
+                     for cell in range(final_size)])
             else:
                 # odd rows are all white
                 final.append(["  "] * final_size)
@@ -243,7 +246,8 @@ class Setup:
             # check if chosen start is not the same as the chosen end
             if self.start == self.end:
                 print(
-                    "Ending positon is the same as the starting, Please choose different ending position")
+                    "Ending positon is the same as the starting, Please \
+                        choose different ending position")
             else:
                 break
             self.end = self.check_set("ending")
@@ -252,7 +256,8 @@ class Setup:
 
 class SolveMazeDFS:
 
-    def __init__(self, maze: list, size: int, start: tuple, end: tuple, backtrack: bool, follow: bool):
+    def __init__(self, maze: list, size: int, start: tuple, end: tuple,
+                 backtrack: bool, follow: bool):
         # correct the size (border + starting point)
         self.size = size
 
@@ -280,7 +285,8 @@ class SolveMazeDFS:
             return True
 
         # Check if the current position is possible
-        if x not in [self.size, -1] and y not in [-1, self.size] and maze[x][y] == "  ":
+        if x not in [self.size, -1] and y not in [-1, self.size] \
+                and maze[x][y] == "  ":
 
             # Check if the path is already visited
             if maze[x][y] == "+ ":
@@ -296,7 +302,8 @@ class SolveMazeDFS:
 
             # DFS recursion for each direction
             for new_x, new_y in self.directions:
-                if self.solve_maze_recursion(maze, x + new_x, y+new_y) == True:
+                if self.solve_maze_recursion(maze, x + new_x,
+                                             y+new_y) == True:
                     return True
 
             # BACKTRACK
@@ -320,7 +327,8 @@ class SolveMazeDFS:
         maze[self.end[0]][self.end[1]] = "  "
 
         # start the recursive function with given starting point
-        if self.solve_maze_recursion(maze, self.start[0], self.start[1]) == False:
+        if self.solve_maze_recursion(maze, self.start[0],
+                                     self.start[1]) == False:
             print("Solution doesn't exist")
             self.printSolution(maze)
             return False
