@@ -1,4 +1,4 @@
-# Problem: "Algorytmu generowania labiryntów w ASCII\ + przechodzenie z backtrackingiem"
+# Problem: Algorytmu generowania labiryntów w ASCII\ + przechodzenie z backtrackingiem
 
 ## Autor: Łukasz Baran
 
