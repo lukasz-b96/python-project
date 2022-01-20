@@ -1,4 +1,4 @@
-# Problem: Algorytmu generowania labiryntów w ASCII\ + przechodzenie z backtrackingiem
+# Problem: Algorytmu generowania i przechodzenia labiryntów w ASCII (DFS)
 
 ## Autor: Łukasz Baran
 
