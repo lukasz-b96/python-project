@@ -28,7 +28,7 @@ Sprawdza, jeżeli wprowadzone dane są nieprawidłowe.
 
 Klasa Cell:
 Tworzy obiekty który symuluje pojedynczą komórke w gridzie\
- Inicjalizowany jest z parametrami x oraz y, aby zachować swoje położenie
+Inicjalizowany jest z parametrami x oraz y, aby zachować swoje położenie
 
 atrybuty:
 
@@ -45,10 +45,10 @@ funkcje:
 
 Klasa CreateMazeDFS:
 Na początku pyta użytkownika o "N" rozmiar labiryntu.\
- Sprawdza poprawność wybranego rozmiaru.\
- Później tworzy labirynt o wymiarach N x N.\
- Następnie inicjalizowana jest funkcja tworzenia labiryntu,\
- która wykorzystuje iteracyjny DFS z stosem.
+Sprawdza poprawność wybranego rozmiaru.\
+Później tworzy labirynt o wymiarach N x N.\
+Następnie inicjalizowana jest funkcja tworzenia labiryntu,\
+która wykorzystuje iteracyjny DFS z stosem.
 
 atrybuty:
 
@@ -67,25 +67,26 @@ funkcje:
 
 Klasa Setup:
 Pozwala wybrać start i koniec w labiryncie.\
- Sprawdza ona poprawność wybranych punktów\
- (czy posiadają chociaż jednego sąsiada z polem ->" "\
- czy wybrane punkty należą do labiryntu,\
- czy punkty startu i końca nie nakładają się na siebie)\
- Inicjalizowana jest z parametrami maze oraz size, aby wykorzystać te dane.\
+Sprawdza ona poprawność wybranych punktów\
+(czy posiadają chociaż jednego sąsiada z polem ->" "\
+wybrane punkty należą do labiryntu,\
+punkty startu i końca nie nakładają się na siebie)\
+Inicjalizowana jest z parametrami maze oraz size, aby wykorzystać te dane.
 
 atrybuty:
 
-- self.maze: pobiera labirynt aby na nim sprawdzać wybrane punkty\
-- self.size: zachowuje rozmiar labiryntu (N \* 2 + 1)\
+- self.maze: pobiera labirynt aby na nim sprawdzać wybrane punkty
+- self.size: zachowuje rozmiar labiryntu (N \* 2 + 1)
 - self.directions: pomocnicza tablica zmiennych tuple,\
-  aby łatwiej było iterować w pętli\
+  aby łatwiej było iterować w pętli
 - self.start, self.end: zachowują punkty startu i końca\
    w typie tuple podane przez użytkownika
-  \
-   funkcje:
-- check_setup: sprawdza wprowadzane dane\
+
+funkcje:
+
+- check_setup: sprawdza wprowadzane dane
 - get_positions: sprawdza czy na pewno wybrane punkty\
-  nie nakładają sie i zwraca dane w formie tuple\
+  nie nakładają sie i zwraca dane w formie tuple
 
 legenda co jest wyświetlane:
 
@@ -94,9 +95,9 @@ legenda co jest wyświetlane:
 
 Klasa SolveMazeDFS:
 Ma za zadaniem przejść podany labirynt, z podanym wejściem i wyjściem.\
- Przyjmuje flagi które są wykorzystywane,\
- aby kontrolować co ma zostać wyświetlone.\
- Wykorzystuje algorytm DFS za pomocą rekurencji.\
+Przyjmuje flagi które są wykorzystywane,\
+aby kontrolować co ma zostać wyświetlone.\
+Wykorzystuje algorytm DFS za pomocą rekurencji.
 
 atrybuty:
 
@@ -109,11 +110,11 @@ atrybuty:
 
 funkcje:
 
-- printSolution: funkcja która wyświetla aktualny stan przejścia\
+- printSolution: funkcja która wyświetla aktualny stan przejścia
 - solve_maze_recursion: funkcje rekurencyjna,\
-  która służy do generowania rozwiązania (DFS z backtrackingiem)\
+  która służy do generowania rozwiązania (DFS z backtrackingiem)
 - solve_maze: funkcja inicjalizująca rekurencje,\
-  ustawia pola początkowe i końcowe w rozwiązaniu\
+  ustawia pola początkowe i końcowe w rozwiązaniu
 
 legenda co jest wyświetlane:
 
